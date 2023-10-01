@@ -1,0 +1,27 @@
+GAL16V8
+EGA
+R1IN R0IN B1IN G1IN VIN B0IN HIN G0IN CFG1 GND
+CFG2 HSYNC VSYNC R1 R0 G1 G0 B1 B0 VCC
+
+ R0 =  R0IN * /CFG1 +
+       G0IN *  CFG1
+ R1 =  R1IN
+ G0 =  G0IN +
+       R1IN *  G1IN * /B1IN * /R0IN * /G0IN * /B0IN * CFG1
+/G1 = /G1IN +
+       R1IN *  G1IN * /B1IN * /R0IN * /G0IN * /B0IN * CFG1
+ B0 =  B0IN * /CFG1 +
+       G0IN *  CFG1
+ B1 = B1IN
+ HSYNC = HIN * CFG2 +
+        /HIN * /VIN * /CFG2 +
+         HIN *  VIN * /CFG2
+ VSYNC = VIN + /CFG2
+
+DESCRIPTION
+EGA to PAL/NTSC converter
+
+CFG1=1 (JP1 is not installed) - 16 color mode
+CFG1=0 (JP1 installed)        - 64 color mode
+CFG2=1 (JP2 is not installed) - separate sync for AD724
+CFG2=0 (JP2 installed)        - composite sync for AD724

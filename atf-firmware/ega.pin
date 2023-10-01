@@ -1,0 +1,25 @@
+
+
+ Pin # | Name     | Pin Type
+-----------------------------
+   1   | R1IN     | Input
+   2   | R0IN     | Input
+   3   | B1IN     | Input
+   4   | G1IN     | Input
+   5   | VIN      | Input
+   6   | B0IN     | Input
+   7   | HIN      | Input
+   8   | G0IN     | Input
+   9   | CFG1     | Input
+  10   | GND      | GND
+  11   | CFG2     | Input
+  12   | HSYNC    | Output
+  13   | VSYNC    | Output
+  14   | R1       | Output
+  15   | R0       | Output
+  16   | G1       | Output
+  17   | G0       | Output
+  18   | B1       | Output
+  19   | B0       | Output
+  20   | VCC      | VCC
+
