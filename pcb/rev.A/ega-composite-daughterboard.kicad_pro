@@ -57,7 +57,7 @@
         }
       ],
       "drc_exclusions": [
-        "lib_footprint_mismatch|146903571|80650000|ab7ed7af-f750-4e97-9559-8ff97134237e|00000000-0000-0000-0000-000000000000"
+        "lib_footprint_mismatch|146922321|80650000|ab7ed7af-f750-4e97-9559-8ff97134237e|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -68,7 +68,7 @@
         "clearance": "error",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
-        "copper_sliver": "ignore",
+        "copper_sliver": "warning",
         "courtyards_overlap": "warning",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -99,7 +99,7 @@
         "silk_over_copper": "ignore",
         "silk_overlap": "ignore",
         "skew_out_of_range": "error",
-        "solder_mask_bridge": "ignore",
+        "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
         "text_thickness": "warning",
@@ -211,7 +211,7 @@
   },
   "erc": {
     "erc_exclusions": [
-      "multiple_net_names|1689100|1892300|b0e2c790-35be-4718-88d6-410a2e63f26a|c797b80e-8016-4371-85b4-bfe6e5c556be|||"
+      "multiple_net_names|1689100|1892300|9dafb2aa-ed39-4af6-938e-f07460730b32|c797b80e-8016-4371-85b4-bfe6e5c556be|||"
     ],
     "meta": {
       "version": 0
@@ -427,7 +427,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "pc-ega-composite-daughterboard.kicad_pro",
+    "filename": "ega-composite-daughterboard.kicad_pro",
     "version": 1
   },
   "net_settings": {
